@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "896754428324",
+    "project_id": "login-app-flutter-31d19",
+    "storage_bucket": "login-app-flutter-31d19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896754428324:android:96dd636b61cad7136d3931",
+        "android_client_info": {
+          "package_name": "com.eshan.login_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5KFRdU7Vw-H0XeAeFJCEk80jDM8wpXwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
