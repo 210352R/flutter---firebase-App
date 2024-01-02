@@ -107,7 +107,9 @@ class _SignInState extends State<SignIn> {
                           dynamic result = await _auth.signInAnon();
                           if (result == null) {
                             print('error with signing in  ============= ');
+                            setState(() => loading = false);
                           } else {
+                            setState(() => loading = true);
                             print('signed in Annonimously =============');
                             print(result);
                           }

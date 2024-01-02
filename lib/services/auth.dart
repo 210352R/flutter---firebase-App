@@ -1,6 +1,7 @@
 // import firebase auth package
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:login_app/models/user.dart';
+import 'package:login_app/services/database.dart';
 
 class AuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -57,6 +58,9 @@ class AuthService {
       print(
           "Registering user with email and password Done ----------------------");
       print(user);
+
+      await DatabaseService(uid: user!.uid)
+          .updateUserData('0', 'new crew member', 100);
       return _userFromFirebaseUser(user);
     } catch (error) {
       print(error.toString());
